@@ -60,8 +60,11 @@ b {
     font-size: 18px;
 }
 h1{
-  font-family: Arial;
+  font-family:Arial, Helvetica, sans-serif;
 }
 h2{
-  font-family: Arial;
+  font-family:Arial, Helvetica, sans-serif;
+}
+p{
+  font-family:Arial, Helvetica, sans-serif;
 }
