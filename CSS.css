@@ -163,3 +163,26 @@ p{
   color: #fff;
   padding:0.8%
 }
+
+.imageone{
+  position: absolute;
+    top: 40px;
+    right: 16px;
+    font-size: 18px;
+    box-shadow: 5px 10px #614343
+
+}
+.imagetwo{
+  position: absolute;
+  top: 100px;
+  right: 16px;
+  font-size: 18px;
+  box-shadow: 5px 10px #614343
+}
+
+.projecth2{
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  top: 200px;
+}
