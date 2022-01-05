@@ -58,13 +58,108 @@ b {
     top: 10px;
     right: 16px;
     font-size: 18px;
-}
-h1{
-  font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 5px 10px #614343
 }
 h2{
-  font-family:Arial, Helvetica, sans-serif;
+  position: relative;
+  font-family: Arial;
+  font-size: 25px;
+  top: 200px;
 }
+.centre{
+  position: absolute;
+  top: 10;
+  right:10px;
+  font-family: Arial;
+}
+
+.bottom {
+  position: absolute;
+  top: 1000px;
+  right: 16px;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: max-content;
+  top: 200px
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  font-family: Arial;
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#yt-link {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+  color: hsl(0 0 0 / 0.7);
+}
+:root {
+  --bg-color: rgb(255, 255, 255);
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 24;
+}
+
 p{
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top: 420px;
+  padding: 0.2%;
+}
+.hero{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  background-image: url("Media/co341S.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 70%;
+  color: #fff;
+  padding:0.8%
 }
