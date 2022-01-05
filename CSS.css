@@ -1,0 +1,61 @@
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: whites; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 12px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  font-family:Arial, Helvetica, sans-serif;
+}
+.btn:hover {
+    background-color: RoyalBlue;
+    font-size: 16px;
+  }
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  font: arial; 
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:Arial, Helvetica, sans-serif, monospace, Cursive; 
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(134, 23, 23);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #27259e;
+  color: white;
+  font-family: Lucida Console; 
+}
+.topnav a.Projects{
+    font-family: 'Courier New', Courier, monospace; 
+}
+.topnav a.About{
+    font-family: Georgia; 
+}
+b {
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.container {
+    position: relative;
+  }
+.bottomright {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 18px;
+}
